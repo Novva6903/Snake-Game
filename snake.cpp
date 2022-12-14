@@ -126,7 +126,7 @@ void printMap() {
 			printf("%c", map[i][j]);
 		}
 		if (i == 3) printf("   Score: %d", score);
-		else if (i == 4) printf("   Press R to restart");
+		else if (i == 4) printf("   Press R to Restart");
 		else if (i == 5) printf("   Press E to Exit");
 		printf("\n");
 	}
