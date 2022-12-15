@@ -84,16 +84,6 @@ void pushHead(int Y, int X, char symbol) {
 
 }
 
-void pushTail(int Y, int X, char symbol) {
-	Snake *curr = newSnake(Y, X, symbol);
-	if (!head) head = tail = curr;
-	else {
-		tail->next = curr;
-		curr->prev = tail;
-		tail = curr;
-	}
-}
-
 void popTail() {
 	Snake *curr = tail;
 	if (!head) return;
